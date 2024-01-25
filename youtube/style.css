@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.navbar .searchbar {
+    display: flex;
+    align-items: center;
+    height: 39px;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #cccccc;
+    width: 600px;
+    margin-right: 10px;
+    border-radius: 19px;
+    height: 100%;
+    
+   
+}
+.search input {
+    border: none;
+    width: 90%;
+    padding-left: 10px; 
+    font-size: 16px;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-left: 1px solid #c2c2c2;
+    width: 10%;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+    background-color: #f2f2f2;
+    
+}
+
+.search button i {
+    padding: 0px 0px 0px 12px;
+
+    
+   
+}
+.searchbar i {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 50%;
+    
+    
+}
+
+.material-icons {
+    color: #606060;
+    margin-right: 12px;
+    
+}
+
+/* mainbody */
+.mainbody {
+    height: calc(100vh - 56px);
+    display: flex;
+    overflow: hidden;
+}
+
+
+.categories {
+    width: 240px;
+    height: 100%;
+    background: white;
+    padding: 0px 12px 0px 12px;
+    border: none;
+    
+    
+    
+}
+
+.scroll-bar:hover {
+    height: 100%;
+    width: 108%;
+    border: 0px solid rgb(77, 76, 76);
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: none;
+  
+    
+}
+
+.category-section {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.category-section .category:last-child {
+    margin-bottom: 10px;
+}
+
+.category_heading {
+    margin: 10px 0px 10px 25px;
+    color: #3b3b3b;
+    font-size: 14px;
+    line-height: 2.2rem;
+    font-weight: 500;
+    
+}
+
+ .icon-shorts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 7px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    
+}
+
+.icon-shorts:hover {
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+.category:hover {
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+.active {
+    background: #f2f2f2;
+    font-weight: 500;
+    border-radius: 8px;
+    
+}
+
+.active:hover {
+    background: #f2f2f2;
+    
+}
+
+.active i {
+    color: rgb(34, 28, 28);
+}
+
+.category i {
+    margin-right: 24px;
+}
+
+.cagories-footer {
+    padding: 25px;
+}
+.footer-section {
+    margin-bottom: 12px;
+}
+.footer-section span {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #606060;
+    cursor: pointer;
+}
+.copyright {
+    color: #606060;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.videos {
+    width: calc(100vw - 240px);
+    height: 100%;
+    background: #ffffff;
+    margin-top: 15px;
+    overflow-y: scroll;
+    
+}
+
+.video-grid {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.video {
+    width: calc(25% - 100px);
+    margin-right: 12px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.video .thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+.videos .details {
+    display: flex;
+    margin-top: 5px;
+    width: 90%;
+}
+.video .profile {
+    margin-right: 12px;
+}
+.video .profile img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.video .video-details p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.video .posted-by {
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+    justify-content: center;
+}
+
